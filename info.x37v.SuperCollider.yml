@@ -15,6 +15,7 @@ modules:
       - type: archive
         url: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-Source.tar.bz2
         sha256: 2eaa1e82f069041b18adcd17b73b5458669c8d28413ebe3425f2a4355947410f
+  #quarks need git
   #modified from
   #https://github.com/flathub/org.freecadweb.FreeCAD/blob/919a68d4c8e8b17a482cf2a815940a9fe23a788b/org.freecadweb.FreeCAD.yaml
   #https://github.com/flathub/com.valvesoftware.Steam.Utility.steamtinkerlaunch/blob/93d7da35b1941e0de073d8b874d827a55d3e6e28/modules/git.yml
@@ -49,5 +50,3 @@ finish-args:
   # Needs to save files locally
   - --filesystem=host
   - --metadata=X-DConf=migrate-path=/org/gnome/dictionary/
-  #audio
-  - --socket=pulseaudio

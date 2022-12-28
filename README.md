@@ -11,7 +11,14 @@ flatpak-builder --user --install --force-clean build-dir info.x37v.SuperCollider
 
 ## Run
 
+scide (default):
+
 ```sh
 flatpak run info.x37v.SuperCollider
+```
+
+sclang:
+```sh
+flatpak run --command=sclang info.x37v.SuperCollider path/to/file.sc
 ```
 

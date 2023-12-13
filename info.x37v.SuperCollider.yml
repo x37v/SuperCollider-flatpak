@@ -15,6 +15,23 @@ modules:
       - type: archive
         url: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-Source.tar.bz2
         sha256: 2eaa1e82f069041b18adcd17b73b5458669c8d28413ebe3425f2a4355947410f
+  - name: fftw3
+    buildsystem: autotools
+    config-opts:
+      - "--enable-shared"
+      - "--enable-float"
+    sources:
+      - type: archive
+        url: http://fftw.org/fftw-3.3.10.tar.gz
+        sha256: 56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467
+  - name: sc3-plugins
+    buildsystem: cmake-ninja
+    config-opts:
+      - "-DFFTW3F_LIBRARY=/app/lib/libfftw3f.so"
+    sources:
+      - type: archive
+        url: https://github.com/supercollider/sc3-plugins/releases/download/Version-3.13.0/sc3-plugins-3.13.0-Source.tar.bz2
+        sha256: f8deeb861d402e2a72db51d40b48c443690261b5a53af78983d4cf7ba76717a2
   #quarks need git
   #modified from
   #https://github.com/flathub/org.freecadweb.FreeCAD/blob/919a68d4c8e8b17a482cf2a815940a9fe23a788b/org.freecadweb.FreeCAD.yaml

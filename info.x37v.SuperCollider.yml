@@ -1,4 +1,4 @@
-app-id: info.x37v.SuperCollider
+app-id: io.github.SuperCollider
 runtime: org.kde.Platform
 base: io.qt.qtwebengine.BaseApp
 base-version: '5.15-22.08'

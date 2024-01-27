@@ -13,8 +13,7 @@ modules:
       - -DSC_EL=no
     sources:
       - type: archive
-        url:
-https://github.com/supercollider/supercollider/archive/refs/tags/Version-3.13.0.tar.gz
+        url: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0-Source.tar.bz2
         sha256: 0fc5dba5baeae37f9069ad28885aa405c6a25309e3886cbe111bd3b7c05531ce
   - name: fftw3
     buildsystem: autotools
@@ -31,8 +30,7 @@ https://github.com/supercollider/supercollider/archive/refs/tags/Version-3.13.0.
       - "-DFFTW3F_LIBRARY=/app/lib/libfftw3f.so"
     sources:
       - type: archive
-        url:
-https://github.com/supercollider/sc3-plugins/releases/download/Version-3.13.0/sc3-plugins-3.13.0-Source.tar.bz2
+        url: https://github.com/supercollider/sc3-plugins/releases/download/Version-3.13.0/sc3-plugins-3.13.0-Source.tar.bz2
         sha256: f8deeb861d402e2a72db51d40b48c443690261b5a53af78983d4cf7ba76717a2
   #quarks need git
   #modified from

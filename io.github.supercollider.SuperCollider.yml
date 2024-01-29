@@ -1,4 +1,4 @@
-app-id: info.x37v.SuperCollider
+app-id: io.github.supercollider.SuperCollider
 runtime: org.kde.Platform
 base: io.qt.qtwebengine.BaseApp
 base-version: '5.15-22.08'
@@ -13,8 +13,8 @@ modules:
       - -DSC_EL=no
     sources:
       - type: archive
-        url: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-Source.tar.bz2
-        sha256: 2eaa1e82f069041b18adcd17b73b5458669c8d28413ebe3425f2a4355947410f
+        url: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0-Source.tar.bz2
+        sha256: 0fc5dba5baeae37f9069ad28885aa405c6a25309e3886cbe111bd3b7c05531ce
   - name: fftw3
     buildsystem: autotools
     config-opts:
